@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/downloads', function () {
     return view('download');
 });
+
+Route::get('/guides', function() {
+    return view('guides');
+});

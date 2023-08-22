@@ -1,8 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+    scroll-behavior: smooth;
+}
+
 .hero-section {
     background-image: url('../images/banner.png');
     background-size: cover;
     background-position: center;
+}
+
+a {
+    color: #fff;
 }
