@@ -100,6 +100,7 @@ body {
 }
 
 .menu a {
+    margin-top: 1rem;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
@@ -139,6 +140,7 @@ body {
         font-size: 1rem;
     }
 }
+
 
 /* Hero */
 
@@ -285,6 +287,7 @@ body {
     }
 }
 
+
 /* Our Team */
 
 .scroll-block {
@@ -300,6 +303,7 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 
 /* Join Us */
 
@@ -320,6 +324,7 @@ body {
         padding-left: 0px;
     }
 }
+
 
 /* Footer */
 
