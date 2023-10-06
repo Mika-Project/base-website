@@ -87,6 +87,10 @@ body {
     height: 100%;
 }
 
+.space-between-header-sections {
+    padding: 15px 0px;
+}
+
 
 /* Nav Bar */
 

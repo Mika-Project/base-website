@@ -58,7 +58,7 @@
     {{-- Features --}}
     <section>
         <div class="container background2 section-margin-bottom" id="features">
-            <div class="row" data-aos="fade-up" data-aos-delay="150" data-aos-offset="0">
+            <div class="row space-between-header-sections" data-aos="fade-up" data-aos-delay="150" data-aos-offset="0">
                 <div class="col">
                     <h1 class="text-center">OS <span style="color: #F34B6C;">features</span></h1>
                 </div>
@@ -89,7 +89,7 @@
     {{-- OUR TEAM --}}
     <section>
         <div class="container background section-margin-bottom" id="our-team">
-            <div class="row"
+            <div class="row space-between-header-sections"
             data-aos="fade-up"
             data-aos-delay="150"
             data-aos-offset="0"
@@ -155,7 +155,7 @@
     {{-- Join Us --}}
     <section>
         <div class="container background2 section-margin-bottom" id="features">
-            <div class="row" style="padding-top: 20px;">
+            <div class="row" style="padding-top: 15px;">
                 <div class="col"
                 data-aos="fade-up"
                 data-aos-delay="150"
