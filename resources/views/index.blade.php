@@ -12,6 +12,25 @@
     <script>
         alert('The images on the website are not how they will be in the final release. Its still very much in beta');
     </script>
+    <title>Mika Linux</title>
+    <meta name="title" content="Mika Linux" />
+    <meta name="description" content="Welcome to mika linux! We're an arch based linux distro, and we're trying to help the average user to switch towards linux. We offer multiple tools and features to make this process easier." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mika-linux.com" />
+    <meta property="og:title" content="Mika Linux" />
+    <meta property="og:description" content="Welcome to mika linux! We're an arch based linux distro, and we're trying to help the average user to switch towards linux. We offer multiple tools and features to make this process easier." />
+    <meta property="og:image" content="https://examples.luciousdev.nl/images/mikalinuxlogo.png" />
+    <meta name="theme-color" content="#F34B6C">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mika-linux.com" />
+    <meta property="twitter:title" content="Mika Linux" />
+    <meta property="twitter:description" content="Welcome to mika linux! We're an arch based linux distro, and we're trying to help the average user to switch towards linux. We offer multiple tools and features to make this process easier." />
+    <meta property="twitter:image" content="https://examples.luciousdev.nl/images/mikalinuxlogo.png" />
+
 </head>
 <body>
     {{-- NAV BAR --}}
@@ -172,7 +191,7 @@
                     <p class="text-center text-joinus-section">Join us on social media! We're building an amazing community over on our discord, to hang out and to help you out with any issues you may have.<br><br>We also have other socials like our <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. And you're able to find all of our source code on our <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>.</p>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
-                    <iframe class="discord-iframe" src="https://discord.com/widget?id=1141693665148928022&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <iframe class="discord-iframe" title="discord iframe" src="https://discord.com/widget?id=1141693665148928022&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>
         </div>
