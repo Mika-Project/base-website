@@ -1,5 +1,5 @@
 @php
-    $pageTitle = "123Mika Linux - Home";
+    $pageTitle = "Mika Linux - Home";
     $heroTitle = "Welcome to <span style='color: #F34B6C;'>Mika</span> Linux";
     $heroText = "We try <span id='typer'></span>";
     $heroImage = asset('images/banner.png');
@@ -39,7 +39,7 @@
     @include('components.hero')
 
     {{-- ABOUT US --}}
-    <section class="about-us" id="about-us" style="overflow-x:hidden;">
+    <section class="about-us" id="about-us" style="overflow-x:hidden; overflow-y:hidden;">
         <div class="container background2 section-margin-top section-margin-bottom">
             <div class="row"
             data-aos="fade-up"
