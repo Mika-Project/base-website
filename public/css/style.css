@@ -95,6 +95,7 @@ body {
 /* Nav Bar */
 
 .image {
+    margin-top: 1rem;
     height: 5rem;
 }
 
@@ -138,7 +139,6 @@ body {
         font-size: 1rem;
     }
 }
-
 
 /* Hero */
 
@@ -285,7 +285,6 @@ body {
     }
 }
 
-
 /* Our Team */
 
 .scroll-block {
@@ -302,7 +301,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 /* Join Us */
 
 .discord-iframe {
@@ -311,7 +309,8 @@ body {
 }
 
 .text-joinus-section {
-    padding-left: 3rem;
+    padding-left: 6rem;
+    margin-top: 3.5rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -322,13 +321,12 @@ body {
     }
 }
 
-
 /* Footer */
 
 .background-footer {
     color: white;
-    background-color: #4C4E56;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0);
+    background-color: #2d2d30;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0);
 }
 
 .background-footer a {
@@ -349,7 +347,9 @@ a:hover {
 }
 
 .footer-custom {
-    padding-top: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 #copyright {
