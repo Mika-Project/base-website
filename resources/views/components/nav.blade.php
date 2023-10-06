@@ -4,7 +4,7 @@
         <div class="container bg-color">
             <div class="row justify-content-between align-items-center">
                 <div class="col-2">
-                    <img class="image img-fluid" src="{{ asset('images/mikalinuxlogowhite.png') }}">
+                    <img class="image img-fluid" alt="mikalinux logo" src="{{ asset('images/mikalinuxlogowhite.png') }}">
                 </div>
                 <div class="col-auto">
                     <ul class="nav">
