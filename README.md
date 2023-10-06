@@ -14,3 +14,10 @@ Then you can run the site with these 2 commands (you'll need to run them both)
 php artisan serve
 npm run dev
 ```
+
+You can view the website [here](https://mika-linux.com)
+
+
+## Todo
+
+- [ ] Get an image of the AI assistant, when thats ready.
