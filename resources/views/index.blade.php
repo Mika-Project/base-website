@@ -1,5 +1,5 @@
 @php
-    $pageTitle = "Mika Linux - Home";
+    $pageTitle = "123Mika Linux - Home";
     $heroTitle = "Welcome to <span style='color: #F34B6C;'>Mika</span> Linux";
     $heroText = "We try <span id='typer'></span>";
     $heroImage = asset('images/banner.png');
@@ -12,7 +12,6 @@
     <script>
         alert('The images on the website are not how they will be in the final release. Its still very much in beta');
     </script>
-    <title>Mika Linux</title>
     <meta name="title" content="Mika Linux" />
     <meta name="description" content="Welcome to mika linux! We're an arch based linux distro, and we're trying to help the average user to switch towards linux. We offer multiple tools and features to make this process easier." />
 
