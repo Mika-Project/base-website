@@ -9,6 +9,9 @@
 <html lang="en">
 <head>
     @include('components.headtags')
+    <script>
+        alert('The images on the website are not how they will be in the final release. Its still very much in beta');
+    </script>
 </head>
 <body>
     {{-- NAV BAR --}}
@@ -35,7 +38,7 @@
             data-aos-offset="0"
             >
                 <div class="col">
-                    <p class="text-center">Mika Linux is one of the many Arch based distrobutions. We're trying to help <span>you</span> switch from windows/mac to linux. We're aware of some of the limitations of linux, but these days it's stable enough that most people could actually switch. So our goal is to help everyone make the switch in the most user friendly possible way as possible.</p>
+                    <p class="text-center">Mika Linux is one of the many Arch based distrobutions. We're trying to help you switch from windows/mac to linux. We're aware of some of the limitations of linux, but these days it's stable enough that most people could actually switch. So our goal is to help everyone make the switch in the most user friendly possible way as possible.<br><br>To get started click the download button.</p>
                 </div>
             </div>
             <div class="row"
@@ -78,7 +81,7 @@
                     <p class="text-center diagtool-features-section" style="padding-top: 4rem;">Our diagnostic tool can help you diagnose issues with your PC, both hardware and software-related. It will test your PC and provide recommendations about the results later on. It's also very useful when someone else is going to diagnose your computer.</p>
                 </div>
                 <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
-                    <img src="{{ asset('images/banner.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/diagtool.png') }}" alt="" class="img-fluid">
                 </div>
             </div>
         </div>

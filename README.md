@@ -15,5 +15,9 @@ php artisan serve
 npm run dev
 ```
 
-
 You can view the website [here](https://mika-linux.com)
+
+
+## Todo
+
+- [ ] Get an image of the AI assistant, when thats ready.
