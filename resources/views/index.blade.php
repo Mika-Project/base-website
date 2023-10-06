@@ -1,109 +1,190 @@
+@php
+    $pageTitle = "Mika Linux - Home";
+    $heroTitle = "Welcome to <span style='color: #F34B6C;'>Mika</span> Linux";
+    $heroText = "We try <span id='typer'></span>";
+    $heroImage = asset('images/banner.png');
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mika Linux</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="icon" href="{{ asset('images/mikalinuxlogo.png') }}">
+    @include('components.headtags')
 </head>
-<body class="bg-gray-900 text-white">
-<nav class="bg-gray-800 py-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center">
-            <img src="{{ asset('images/mikalinuxlogo.png') }}" alt="Mika Linux Logo" class="h-8 w-8 mr-2">
-            <h1 class="text-3xl font-bold">Mika Linux</h1>
-        </div>
-        <ul class="flex space-x-4">
-            <li><a href="#about" class="hover:text-gray-300">About</a></li>
-            <li><a href="#features" class="hover:text-gray-300">Features</a></li>
-            <li><a href="/guides" class="hover:text-gray-300">Guides</a></li>
-            <li><a href="/downloads" class="px-4 py-2 bg-gray-700 rounded-full text-white font-semibold hover:bg-gray-600 transition duration-300">Download</a></li>
-        </ul>
-    </div>
-</nav>
+<body>
+    {{-- NAV BAR --}}
+    @include('components.nav')
 
-<section class="hero-section py-60">
-    <div class="container mx-auto text-center">
-        <h1 class="text-4xl font-semibold text-white mb-4">Welcome to Mika Linux</h1>
-        <p class="text-lg text-white">Our goal is <span id="typer"></span></p>
-    </div>
-</section>
+    {{-- HERO --}}
+    @include('components.hero')
 
-
-<section id="about" class="py-16 text-center">
-    <div class="container mx-auto">
-        <h2 class="text-2xl font-semibold mb-4">About Mika-Linux</h2>
-        <p class="text-gray-300">
-            Welcome to Mika Linux, your gateway to a user-friendly Linux distribution designed to simplify your transition from other operating systems, like Windows, to the world of open-source computing.
-        </p>
-        <p class="text-gray-300">
-            At Mika Linux, we understand that taking the leap from familiar environments can be a daunting task. That's why we've crafted a distribution that strikes a perfect balance between familiarity and the power of Linux.
-        </p>
-        <p class="text-gray-300">
-            Our mission is to provide you with a seamless journey into the open-source ecosystem. With an intuitive interface, intuitive guides, and a range of helpful tools, we're here to make your Linux transition a breeze.
-        </p>
-        <p class="text-gray-300">
-            Whether you're a seasoned Linux enthusiast or someone taking their first steps into this new world, Mika Linux offers a comfortable environment where you can explore the benefits of open-source software without feeling overwhelmed.
-        </p>
-        <p class="text-gray-300">
-            Join us on a journey where the best of both worlds meet - the familiarity you seek, paired with the power and freedom that Linux brings. Discover Mika Linux, your bridge to a new realm of computing.
-        </p>
-    </div>
-</section>
-
-<section id="features" class="bg-gray-800 py-16">
-    <div class="container mx-auto text-center">
-        <h2 class="text-2xl font-semibold mb-4">Features</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Mika-Assistant</h3>
-                <p class="text-gray-300">Mika assistant is an AI powered voice assistant. It can open websites, watch anime, tell you the time, and a lot more features to come.</p>
+    {{-- ABOUT US --}}
+    <section class="about-us" id="about-us">
+        <div class="container background section-margin-top section-margin-bottom">
+            <div class="row"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-offset="0"
+            >
+                <div class="col">
+                    <h1 class="text-center">About <span style="color: #F34B6C;">us</span></h1>
+                </div>
             </div>
-            <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Easy to use</h3>
-                <p class="text-gray-300">We're trying our best to make the transition from windows to linux as easy as possible, you can look at our <a href="/guides" target="_blank">guides</a>.</p>
+            <div class="row"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            data-aos-offset="0"
+            >
+                <div class="col">
+                    <p class="text-center">Mika Linux is one of the many Arch based distrobutions. We're trying to help <span>you</span> switch from windows/mac to linux. We're aware of some of the limitations of linux, but these days it's stable enough that most people could actually switch. So our goal is to help everyone make the switch in the most user friendly possible way as possible.</p>
+                </div>
+            </div>
+            <div class="row"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            >
+                <div class="col d-flex justify-content-center">
+                    <form action="{{ url('/downloads') }}">
+                        <button type="submit" class="button">
+                            <span class="button__text">Download</span>
+                            <span class="button__icon"><svg class="svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="social" class="bg-gray-900 py-16">
-    <div class="container mx-auto text-center">
-        <h2 class="text-2xl font-semibold text-white mb-4">Connect with Us</h2>
-        <div class="flex justify-center items-center space-x-4 mb-8">
-            <a href="#" class="text-gray-400 hover:text-gray-300" target="_blank" rel="noopener noreferrer">
-                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.6 6.2c-.3-1.1-1-2-2.1-2.3C19.8 3.6 12 3.6 12 3.6s-7.8 0-9.5.3c-1.1.3-1.9 1.2-2.2 2.3C.2 7.9.2 12 .2 12s0 4.1.3 5.5c.3 1.1 1.1 2 2.2 2.3 1.7.3 9.5.3 9.5.3s7.8 0 9.5-.3c1.1-.3 1.9-1.2 2.1-2.3.3-1.4.3-5.5.3-5.5s0-4.1-.3-5.3zM9.6 15.3V8.7l5.6 3.3-5.6 3.3z"/>
-                </svg>
-            </a>
-            <span class="text-gray-400">@mika-linux</span><br>
-            <a href="#" class="text-gray-400 hover:text-gray-300" target="_blank" rel="noopener noreferrer">
-                <svg class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.4 6.8c-.7.3-1.3.4-2 .4.7-.4 1.3-1.1 1.6-1.9-.7.4-1.5.7-2.3.8-.7-.8-1.7-1.3-2.8-1.3-2.1 0-3.9 1.8-3.9 3.9 0 .3 0 .6.1.9-3.2-.2-6-1.7-7.9-4.1-.3.5-.4 1-.4 1.6 0 1.1.6 2.1 1.3 2.7-.5 0-1-.1-1.4-.3v.1c0 1.5 1.1 2.7 2.5 3-.3.1-.6.2-1 .2-.2 0-.4 0-.6-.1.4 1.3 1.6 2.2 3 2.2-1.1.9-2.5 1.4-4 1.4-.3 0-.6 0-.9 0 1.4.9 3.1 1.4 4.9 1.4 5.9 0 9.1-4.9 9.1-9.1 0-.2 0-.4 0-.6 .6-.5 1.2-1.1 1.7-1.8z"/>
-                </svg>
-            </a>
-            <span class="text-gray-400">@mika-linux</span>
-        </div>
-        <div class="max-w-md mx-auto">
-            <iframe src="https://discord.com/widget?id=1141693665148928022&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-    </div>
-</section>
+    </section>
 
-<footer class="bg-gray-800 py-8">
-    <div class="container mx-auto text-center">
-        <p class="text-gray-500">&copy; 2023 Mika Linux. All rights reserved.</p>
-    </div>
-</footer>
+    {{-- Features --}}
+    <section>
+        <div class="container background2 section-margin-bottom" id="features">
+            <div class="row" data-aos="fade-up" data-aos-delay="150" data-aos-offset="0">
+                <div class="col">
+                    <h1 class="text-center">OS <span style="color: #F34B6C;">features</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 ai-features-section" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
+                    <h4 class="text-center" id="ai-features">AI Voice Assistant</h4>
+                    <p class="text-center ai-features-section-p">With our OS, we're offering an AI voice assistant, powered by ChatGPT, to help you with your daily tasks.</p>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
+                    <img src="{{ asset('images/banner.png') }}" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3rem;">
+                <div class="col-12 col-md-6 diagtool-features-section" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
+                    <h4 class="text-center">Diagnostic Tool</h4>
+                    <p class="text-center diagtool-features-section" style="padding-top: 4rem;">Our diagnostic tool can help you diagnose issues with your PC, both hardware and software-related. It will test your PC and provide recommendations about the results later on. It's also very useful when someone else is going to diagnose your computer.</p>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
+                    <img src="{{ asset('images/banner.png') }}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    {{-- OUR TEAM --}}
+    <section>
+        <div class="container background section-margin-bottom" id="our-team">
+            <div class="row"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-offset="0"
+            >
+                <div class="col">
+                    <h1 class="text-center">Our <span style="color: #F34B6C;">team</span></h1>
+                </div>
+            </div>
+            <div class="scroll-block"
+            data-aos="fade-left"
+            data-aos-delay="350"
+            data-aos-offset="0"
+            >
+                <div class="card" style="width: 18rem;">
+                    <a href="https://luciousdev.nl" target="_blank">
+                        <img class="card-img-top" src="{{ asset('images/lucypicture.jpg') }}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Lucy</h5>
+                        <p style="color:#6b6b6b;" class="card-text">Role: Founder/Development lead</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/U-L-M-S" target="_blank">
+                        <img class="card-img-top" src="{{ asset('images/torva.png') }}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Torva</h5>
+                        <p style="color:#6b6b6b;" class="card-text">Role: OS/Backend development</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/JaKooLit" target="_blank">
+                        <img class="card-img-top" src="{{ asset('images/jay.jpeg') }}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Jay</h5>
+                        <p style="color:#6b6b6b;" class="card-text">Role: OS/Backend development</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://tecnoblast.github.io">
+                        <img class="card-img-top" src="{{ asset('images/tcbl.png') }}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">TecnoBlast</h5>
+                        <p style="color:#6b6b6b;" class="card-text">Role: Backend development</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Jarno556564" target="_blank">
+                        <img class="card-img-top" src="{{ asset('images/jarno.png') }}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Jarno</h5>
+                        <p style="color:#6b6b6b;" class="card-text">Role: Web developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Join Us --}}
+    <section>
+        <div class="container background2 section-margin-bottom" id="features">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-offset="0"
+                >
+                    <h1 class="text-center">Join <span style="color: #F34B6C;">us</span></h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
+                    <p class="text-center text-joinus-section">Join us on social media! We're building an amazing community over on our discord, to hang out and to help you out with any issues you may have.<br><br>We also have other socials like our <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. And you're able to find all of our source code on our <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>.</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
+                    <iframe class="discord-iframe" src="https://discord.com/widget?id=1141693665148928022&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @include('components.footer')
+
+    {{-- SCRIPTS --}}
+    <script>
+        let typed = new Typed('#typer', {
+            strings: ['to make an easy to use Linux distribution.', 'to create a beginner friendly Linux distro.', 'to create a Linux distribution that more advanced users can use.', 'to stay free forever.'],
+            typeSpeed: 80,
+            backSpeed: 20,
+            loop: true
+        });
+    </script>
 </body>
-<script>
-    let typed = new Typed('#typer', {
-        strings: ['to make an easy to use linux distrobution.', 'to create a beginner friendly linux distro.', 'to create a linux distrobution that more advanced users can use.', 'to stay free forever.'],
-        typeSpeed: 80,
-        backSpeed: 20,
-        loop: true
-    })
-</script>
 </html>
