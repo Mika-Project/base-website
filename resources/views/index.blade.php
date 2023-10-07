@@ -1,7 +1,7 @@
 @php
     $pageTitle = "Mika Linux - Home";
-    $heroTitle = "Welcome to <span style='color: #F34B6C;'>Mika</span> Linux";
-    $heroText = "We try <span id='typer'></span>";
+    $heroTitle = "Mika Linux";
+    $heroText = "We are trying <span id='typer'></span>";
     $heroImage = asset('images/banner.png');
 @endphp
 
@@ -9,9 +9,9 @@
 <html lang="en">
 <head>
     @include('components.headtags')
-    <script>
+    {{-- <script>
         alert('The images on the website are not how they will be in the final release. Its still very much in beta');
-    </script>
+    </script> --}}
     <meta name="title" content="Mika Linux" />
     <meta name="description" content="Welcome to mika linux! We're an arch based linux distro, and we're trying to help the average user to switch towards linux. We offer multiple tools and features to make this process easier." />
 
@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 ai-features-section" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
                     <h4 class="text-center" id="ai-features">AI Voice Assistant</h4>
-                    <p class="text-center ai-features-section-p">With our OS, we're offering an AI voice assistant, powered by ChatGPT, to help you with your daily tasks.</p>
+                    <p class="text-center ai-features-section-p">With our OS, we are offering an AI voice assistant, powered by ChatGPT, to help you with your daily tasks.</p>
                 </div>
                 <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
                     <img src="{{ asset('images/banner.png') }}" alt="" class="img-fluid">
@@ -96,7 +96,7 @@
             <div class="row" style="margin-top: 3rem;">
                 <div class="col-12 col-md-6 diagtool-features-section" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
                     <h4 class="text-center">Diagnostic Tool</h4>
-                    <p class="text-center diagtool-features-section" style="padding-top: 4rem;">Our diagnostic tool can help you diagnose issues with your PC, both hardware and software-related. It will test your PC and provide recommendations about the results later on. It's also very useful when someone else is going to diagnose your computer.</p>
+                    <p class="text-center diagtool-features-section" style="padding-top: 4rem;">Our diagnostic tool can help you diagnose issues with your PC, both hardware and software-related. It will test your PC and provide recommendations about the results later on. It is also very useful when someone else is going to diagnose your computer.</p>
                 </div>
                 <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
                     <img src="{{ asset('images/diagtool.png') }}" alt="" class="img-fluid">
@@ -185,7 +185,7 @@
             </div>
             <div class="row" style="margin-top: 15px;">
                 <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
-                    <p class="text-center text-joinus-section">Join us on social media! We're building an amazing community over on our discord, to hang out and to help you out with any issues you may have.<br><br>We also have other socials like our <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. And you're able to find all of our source code on our <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>.</p>
+                    <p class="text-center text-joinus-section">Join us on social media! We're building an amazing community over on our discord, to hang out and to help you out with any issues you may have.<br><br>We also have other socials like our <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. And you're able to find all of our source code on our <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>.<br>For email contact you can send us a message at <a href="mailto:mikalinux@luciousdev.nl">mikalinux@luciousdev.nl</a></p>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
                     <iframe class="discord-iframe" title="discord iframe" src="https://discord.com/widget?id=1141693665148928022&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>

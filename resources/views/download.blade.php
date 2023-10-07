@@ -1,7 +1,7 @@
 @php
     $pageTitle = "Mika Linux - Download";
-    $heroTitle = "Welcome to Mika <span style='color: #F34B6C;'>download</span>";
-    $heroText = "Mika OS Download page";
+    $heroTitle = "Mika Linux - Download";
+    $heroText = "On this page you'll be able to find releases of our OS.";
     $heroImage = asset('images/banner.png');
 @endphp
 

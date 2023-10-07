@@ -1,14 +1,20 @@
+@php
+    $pageTitle = "Mika Linux - Guides";
+    $heroTitle = "Mika Linux - Guides";
+    $heroText = "On this page you'll be able to read guides on how to use the OS.";
+    $heroImage = asset('images/banner.png');
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    @include('components.headtags')
+    <link rel="stylesheet" href="{{ asset('css/downloads.css') }}">
 </head>
-
 <body>
-    <h1>WIP</h1>
-</body>
+    @include('components.nav')
+    @include('components.hero')
 
+    @include('components.footer')
+</body>
 </html>

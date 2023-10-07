@@ -150,21 +150,20 @@ body {
 }
 
 .hero {
+    padding-top: 5rem;
     position: relative;
 }
 
-.hero h1 {
-    position: absolute;
+.hero-text h1 {
+    /* position: absolute; */
     color: white;
-    font-size: 2rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 3.5rem !important;
+    font-weight: 700;
     z-index: 1;
 }
 
-.hero .typer {
-    z-index: 1;
+.hero-text .typer {
+    color: white;
 }
 
 .hero img {
@@ -173,10 +172,16 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-    .hero div {
+    .hero {
+        padding-top: 5rem;
+    }
+    .hero-text .typer {
         visibility: hidden;
     }
-    .hero h1 {
+    .hero-text #typer {
+        visibility: hidden;
+    }
+    .hero-text h1 {
         font-size: 1.6rem;
     }
 }
@@ -354,7 +359,6 @@ a:hover {
 .footer-custom {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
 }
 
 #copyright {

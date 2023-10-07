@@ -12,10 +12,7 @@
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-us">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#our-team">Our team</a>
+                            <a class="nav-link" href="{{ url('/downloads') }}">Download</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/guides') }}">Guides</a>
