@@ -56,7 +56,7 @@
             data-aos-offset="0"
             >
                 <div class="col">
-                    <p class="text-center">Mika Linux is one of the many Arch based distrobutions. We're trying to help you switch from windows/mac to linux. We're aware of some of the limitations of linux, but these days it's stable enough that most people could actually switch. So our goal is to help everyone make the switch in the most user friendly possible way as possible.<br><br>To get started click the download button.</p>
+                    <p class="text-center">Mika Linux is an Arch-based GNU/Linux distribution targeting beginners who are looking to migrate from their existing Windows or macOS installations. Our distribution aims to be as beginner-friendly as possible while providing capable features in a maintained and polished GNU/Linux environment.<br><br>To get started, click the download button bellow.</p>
                 </div>
             </div>
             <div class="row"
@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 ai-features-section" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
                     <h4 class="text-center" id="ai-features">AI Voice Assistant</h4>
-                    <p class="text-center ai-features-section-p">With our OS, we are offering an AI voice assistant, powered by ChatGPT, to help you with your daily tasks.</p>
+                    <p class="text-center ai-features-section-p">Our distribution offers a ChatGPT-powered AI voice assistant to help you with your daily tasks.</p>
                 </div>
                 <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
                     <img src="{{ asset('images/banner.png') }}" alt="" class="img-fluid">
@@ -96,7 +96,7 @@
             <div class="row" style="margin-top: 3rem;">
                 <div class="col-12 col-md-6 diagtool-features-section" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
                     <h4 class="text-center">Diagnostic Tool</h4>
-                    <p class="text-center diagtool-features-section" style="padding-top: 4rem;">Our diagnostic tool can help you diagnose issues with your PC, both hardware and software-related. It will test your PC and provide recommendations about the results later on. It is also very useful when someone else is going to diagnose your computer.</p>
+                    <p class="text-center diagtool-features-section" style="padding-top: 4rem;">In the event of hardware or software issues, our diagnostic tool is made with the goal of helping you diagnose and troubleshoot them. It is capable of testing your computer and providing recommendations accordingly.</p>
                 </div>
                 <div class="col-12 col-md-6" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
                     <img src="{{ asset('images/diagtool.png') }}" alt="" class="img-fluid">
@@ -185,7 +185,7 @@
             </div>
             <div class="row" style="margin-top: 15px;">
                 <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="250" data-aos-offset="0">
-                    <p class="text-center text-joinus-section">Join us on social media! We're building an amazing community over on our discord, to hang out and to help you out with any issues you may have.<br><br>We also have other socials like our <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. And you're able to find all of our source code on our <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>.<br>For email contact you can send us a message at <a href="mailto:mikalinux@luciousdev.nl">mikalinux@luciousdev.nl</a></p>
+                    <p class="text-center text-joinus-section">Join us on social media! We're building an amazing community over on our Discord, feel free to join us there to hang out and ask us for help with any issues you may have.<br><br>You can also find us over at <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. The source code of Mika Linus is available on the project's <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>.<br>For email contact you can send us a message at <a href="mailto:mikalinux@luciousdev.nl">mikalinux@luciousdev.nl</a></p>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
                     <iframe class="discord-iframe" title="discord iframe" src="https://discord.com/widget?id=1141693665148928022&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
