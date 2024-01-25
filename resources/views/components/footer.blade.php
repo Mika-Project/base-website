@@ -6,7 +6,7 @@
                 <a href="{{ url('https://discord.gg/qknedjfdc8') }}" target="_blank">Discord</a>
                 <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">Github</a>
                 <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>
-                <a href="mailto:mikalinux@luciousdev.l">Email Us</a>
+                <a href="mailto:mikalinux@luciousdev.nl">Email Us</a>
             </div>
         </div>
         <div class="row">
