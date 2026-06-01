@@ -1,25 +1,15 @@
 {{-- NAV BAR --}}
-<section class="section-style-top" data-aos="fade-down" data-aos-delay="150" data-aos-offset="0">
-    <div class="menu">
-        <div class="container bg-color">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-2">
-                    <img class="image img-fluid" alt="mikalinux logo" src="{{ asset('images/mikalinuxlogowhite.png') }}">
-                </div>
-                <div class="col-auto">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/downloads') }}">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/guides') }}">Guides</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<nav class="site-nav">
+    <div class="shell nav-inner">
+        <a class="nav-brand" href="/">
+            <img alt="Mika Linux logo" src="{{ asset('images/mikalinuxlogowhite.png') }}">
+            <span>Mika Linux</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="{{ url('/downloads') }}">Download</a></li>
+            <li><a href="{{ url('/guides') }}">Guides</a></li>
+            <li><a class="nav-cta" href="{{ url('https://github.com/Mika-Project') }}" target="_blank">GitHub</a></li>
+        </ul>
     </div>
-</section>
+</nav>
