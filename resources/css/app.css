@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .hero-section {
-    background-image: url('../images/banner.png');
+    background-image: url('/images/banner.png');
     background-size: cover;
     background-position: center;
 }

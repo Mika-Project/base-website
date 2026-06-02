@@ -1,7 +1,7 @@
 @php
     $pageTitle = "Mika Linux - Download";
     $heroTitle = "Download Mika";
-    $heroText = "You're one step away from the beauty of Linux. Grab a release below and we'll take care of the rest.";
+    $heroText = "Pick a release from the list below and you're good to go.";
 @endphp
 
 <!DOCTYPE html>
@@ -17,10 +17,10 @@
     <section class="section" id="about-us">
         <div class="shell">
             <div class="glass download-panel" data-reveal-group>
-                <div class="section-label" data-reveal>// Releases</div>
+                <div class="section-label" data-reveal>Releases</div>
                 <h2 class="section-title" data-reveal>Choose your <span class="accent">version</span></h2>
-                <p data-reveal>Welcome to our download page, you're 1 step further to downloading our OS and enjoying the beauty of Linux. In the table below, you'll be able to find all our releases. (The top one is the most recent.) Please don't download the BETA releases unless you know what you're doing, although the BETA releases are probably stable we don't offer support for it.</p>
-                <p data-reveal>So for most users, we recommend the latest version under the tag <strong style="color:var(--cyan)">RELEASE</strong>.</p>
+                <p data-reveal>Everything we've released is in the table below, newest at the top. If you just want something that works, grab the latest one tagged <strong style="color:var(--pink-soft)">RELEASE</strong>.</p>
+                <p data-reveal>The <strong>BETA</strong> builds are usually fine, but they're for people who don't mind the occasional rough edge, and we can't really offer support for them. Your call.</p>
 
                 <div class="table-wrap" data-reveal>
                     <table class="mika-table">

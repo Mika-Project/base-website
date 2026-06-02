@@ -22,7 +22,7 @@
     --muted: #9aa0b9;
     --muted-2: #6e7494;
 
-    --grad: linear-gradient(120deg, var(--pink) 0%, var(--violet) 52%, var(--cyan) 100%);
+    --grad: linear-gradient(120deg, var(--pink) 0%, var(--pink-soft) 100%);
     --glow-pink: 0 0 40px rgba(243, 75, 108, 0.45);
     --glow-cyan: 0 0 40px rgba(56, 230, 255, 0.35);
 
@@ -56,11 +56,9 @@ body::before {
     inset: 0;
     z-index: -2;
     background:
-        radial-gradient(60vw 60vw at 12% -10%, rgba(243, 75, 108, 0.22), transparent 60%),
-        radial-gradient(55vw 55vw at 100% 8%, rgba(56, 230, 255, 0.16), transparent 55%),
-        radial-gradient(70vw 70vw at 50% 120%, rgba(139, 92, 246, 0.18), transparent 60%),
+        radial-gradient(60vw 50vw at 18% -12%, rgba(243, 75, 108, 0.13), transparent 60%),
+        radial-gradient(48vw 48vw at 96% 2%, rgba(243, 75, 108, 0.06), transparent 55%),
         var(--bg);
-    animation: auroraDrift 22s ease-in-out infinite alternate;
 }
 
 body::after {
@@ -77,10 +75,7 @@ body::after {
     pointer-events: none;
 }
 
-@keyframes auroraDrift {
-    0%   { filter: hue-rotate(0deg) saturate(1); transform: translateY(0); }
-    100% { filter: hue-rotate(-14deg) saturate(1.15); transform: translateY(-2%); }
-}
+/* ambient background is intentionally static */
 
 /* ---- Scrollbar ---- */
 *::-webkit-scrollbar { width: 12px; height: 12px; }
@@ -122,18 +117,12 @@ p { color: var(--muted); font-size: 1.06rem; line-height: 1.75; }
 .section-label {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.82rem;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--cyan);
-    margin-bottom: 14px;
-}
-.section-label::before {
-    content: "";
-    width: 26px; height: 1px;
-    background: linear-gradient(90deg, var(--cyan), transparent);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--pink-soft);
+    margin-bottom: 12px;
 }
 
 .section-title {
@@ -146,12 +135,10 @@ p { color: var(--muted); font-size: 1.06rem; line-height: 1.75; }
 
 /* ---- Glass surfaces ---- */
 .glass {
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.038);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    backdrop-filter: blur(14px) saturate(1.2);
-    -webkit-backdrop-filter: blur(14px) saturate(1.2);
-    box-shadow: 0 22px 60px -30px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    box-shadow: 0 16px 44px -34px rgba(0, 0, 0, 0.7);
 }
 
 /* =========================================================
@@ -248,12 +235,9 @@ p { color: var(--muted); font-size: 1.06rem; line-height: 1.75; }
 .btn-primary {
     color: #fff;
     background: var(--grad);
-    background-size: 180% 180%;
-    box-shadow: var(--glow-pink);
-    animation: btnSheen 6s ease infinite;
+    box-shadow: 0 10px 28px -12px rgba(243, 75, 108, 0.6);
 }
-.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 50px rgba(243, 75, 108, 0.65); color: #fff; }
-@keyframes btnSheen { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 32px -10px rgba(243, 75, 108, 0.7); color: #fff; }
 
 .btn-ghost {
     color: var(--text);

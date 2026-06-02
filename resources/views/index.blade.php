@@ -28,30 +28,18 @@
     {{-- NAV BAR --}}
     @include('components.nav')
 
-    {{-- HERO — the welcome --}}
+    {{-- HERO --}}
     <header class="hero">
-        <span class="orb orb-1"></span>
-        <span class="orb orb-2"></span>
-        <span class="orb orb-3"></span>
-
         <div class="hero-inner">
-            <div class="hero-badge"><span class="dot"></span> Arch-based &middot; Built for newcomers</div>
-            <h1 class="hero-title">
-                <span data-split>Mika</span> <span class="gradient-text" data-split>Linux</span>
-            </h1>
-            <div class="hero-sub">We are trying <span id="typer"></span></div>
+            <h1 class="hero-title">Mika <span class="accent">Linux</span></h1>
+            <div class="hero-sub">We're trying <span id="typer"></span></div>
             <div class="hero-cta">
                 <a class="btn btn-primary" href="{{ url('/downloads') }}">
                     Download
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
                 </a>
-                <a class="btn btn-ghost" href="#features">Explore features</a>
+                <a class="btn btn-ghost" href="#features">See what it does</a>
             </div>
-        </div>
-
-        <div class="scroll-cue">
-            <span>Scroll</span>
-            <span class="mouse"></span>
         </div>
     </header>
 
@@ -59,10 +47,9 @@
     <section class="section" id="about-us">
         <div class="shell">
             <div class="glass about-card" data-reveal-group>
-                <div class="section-label" data-reveal style="justify-content:center;">// 01 &mdash; About us</div>
-                <h2 class="section-title" data-reveal>About <span class="accent">us</span></h2>
-                <p data-reveal>Mika Linux is an Arch-based GNU/Linux distribution targeting beginners who are looking to migrate from their existing Windows or macOS installations. Our distribution aims to be as beginner-friendly as possible while providing capable features in a maintained and polished GNU/Linux environment.</p>
-                <p data-reveal>To get started, click the download button below.</p>
+                <h2 class="section-title" data-reveal>What is Mika?</h2>
+                <p data-reveal>Mika Linux is an Arch-based distro for people coming from Windows or macOS who've been meaning to give Linux a try but didn't want to fight with it to get there. We try to keep it friendly and sensible out of the box, without getting in the way of folks who already know what they're doing.</p>
+                <p data-reveal>It's a small project and very much a work in progress, but we'd love for you to try it. Grab a copy below.</p>
                 <div data-reveal>
                     <a class="btn btn-primary" href="{{ url('/downloads') }}">
                         Download
@@ -86,9 +73,8 @@
     <section class="section" id="features">
         <div class="shell">
             <div class="section-head" data-reveal-group>
-                <div class="section-label" data-reveal>// 02 &mdash; What's inside</div>
-                <h2 class="section-title" data-reveal>OS <span class="accent">features</span></h2>
-                <p class="section-intro" data-reveal>Thoughtful tools that take the friction out of everyday Linux — so you can spend less time fixing things and more time using your computer.</p>
+                <h2 class="section-title" data-reveal>What's <span class="accent">in it</span></h2>
+                <p class="section-intro" data-reveal>A few things we've built into Mika to make day-to-day Linux a bit less of a hassle.</p>
             </div>
 
             <div class="feature-grid" data-reveal-group>
@@ -96,32 +82,32 @@
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
                     </div>
-                    <h4>AI Voice Assistant</h4>
-                    <p>Our distribution offers a ChatGPT-powered AI voice assistant to help you with your daily tasks.</p>
+                    <h4>Voice assistant</h4>
+                    <p>A built-in voice assistant (it uses ChatGPT under the hood) you can ask questions or get a hand with whatever you're doing.</p>
                 </div>
 
                 <div class="feature-card glass" data-reveal>
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-12 2 7h6"/></svg>
                     </div>
-                    <h4>Diagnostic Tool</h4>
-                    <p>In the event of hardware or software issues, our diagnostic tool is made with the goal of helping you diagnose and troubleshoot them. It is capable of testing your computer and providing recommendations accordingly.</p>
+                    <h4>Diagnostic tool</h4>
+                    <p>When something's acting up, the diagnostic tool runs a few checks on your hardware and software and tells you what's probably wrong, plus what to try next.</p>
                 </div>
 
                 <div class="feature-card glass" data-reveal>
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
                     </div>
-                    <h4>One-click Updates</h4>
-                    <p>A friendly system updater keeps everything current without touching the terminal — it tells you plainly what changed and keeps your rolling Arch base healthy.</p>
+                    <h4>Updates without the terminal</h4>
+                    <p>Update everything from one window. It shows you what's about to change before it does anything, so a rolling Arch base doesn't have to be scary.</p>
                 </div>
 
                 <div class="feature-card glass" data-reveal>
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="m9 11 3 3 3-3"/><path d="M12 6v8"/></svg>
                     </div>
-                    <h4>Effortless Install</h4>
-                    <p>A guided graphical installer gets you from USB stick to desktop in minutes. Pick a disk, create your user, and Mika handles the rest — no partitioning expertise required.</p>
+                    <h4>An installer that holds your hand</h4>
+                    <p>A graphical installer that walks you from USB stick to desktop. Pick a disk, make your user, and it handles the rest. No partitioning knowledge required.</p>
                 </div>
             </div>
         </div>
@@ -131,8 +117,8 @@
     <section class="section" id="our-team">
         <div class="shell">
             <div class="section-head" data-reveal-group>
-                <div class="section-label" data-reveal>// 03 &mdash; The people</div>
-                <h2 class="section-title" data-reveal>Our <span class="accent">team</span></h2>
+                <h2 class="section-title" data-reveal>The people behind it</h2>
+                <p class="section-intro" data-reveal>A small bunch of us who work on Mika in our spare time. Say hi sometime.</p>
             </div>
 
             <div class="team-grid" data-reveal-group>
@@ -180,10 +166,9 @@
         <div class="shell">
             <div class="glass join-grid" data-reveal-group>
                 <div>
-                    <div class="section-label" data-reveal>// 04 &mdash; Community</div>
-                    <h2 class="section-title" data-reveal>Join <span class="accent">us</span></h2>
-                    <p data-reveal>Join us on social media! We're building an amazing community over on our Discord, feel free to join us there to hang out and ask us for help with any issues you may have.</p>
-                    <p data-reveal>You can also find us over at <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>. The source code of Mika Linux is available on the project's <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">GitHub</a>. For email contact you can send us a message at <a href="mailto:mikalinux@luciousdev.nl">mikalinux@luciousdev.nl</a>.</p>
+                    <h2 class="section-title" data-reveal>Come say hi</h2>
+                    <p data-reveal>Most of us hang out on Discord. It's the best place to ask questions, get unstuck, or just follow along while we build things. Don't be shy about jumping in.</p>
+                    <p data-reveal>We're also on <a href="{{ url('https://twitter.com/MikaLinux') }}" target="_blank">Twitter</a>, and all the code lives on <a href="{{ url('https://github.com/Mika-Project') }}" target="_blank">GitHub</a>. If you'd rather email, reach us at <a href="mailto:mikalinux@luciousdev.nl">mikalinux@luciousdev.nl</a>.</p>
                 </div>
                 <div class="discord-wrap" data-reveal>
                     <iframe class="discord-iframe" title="discord iframe" src="https://discord.com/widget?id=1141693665148928022&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
